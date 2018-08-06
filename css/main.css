@@ -1,0 +1,367 @@
+:root * {
+  font-family: "Montserrat", sans-serif;
+}
+
+.image-text {
+  height: 120px;
+}
+
+.frame {
+  top: 0px;
+  width: 65%;
+  left: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+  position: fixed;
+  transition: width 1s;
+}
+.frame.final-position {
+  transition: width 1s;
+  top: 0px;
+  width: 50%;
+}
+.frame.final-position.fixed {
+  transition: all 0s;
+  position: absolute;
+  top: 3700px;
+}
+
+#new-identity {
+  position: relative;
+  background: linear-gradient(45deg, #4CBFBA, #82C9AF);
+  height: 500px;
+  overflow: hidden;
+}
+#new-identity .title {
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+#new-identity .text-box {
+  width: 500px;
+}
+#new-identity .text-box .text {
+  padding-left: 28px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  line-height: 29.6px;
+  color: #fff;
+}
+#new-identity .element {
+  position: absolute;
+  top: -165px;
+  height: 650px;
+}
+#new-identity .element.element-right {
+  right: -315px;
+}
+#new-identity .element.element-left {
+  left: -245px;
+}
+@media (max-width: 1200px) {
+  #new-identity .element.element-left {
+    left: -30%;
+  }
+  #new-identity .element.element-right {
+    right: -40%;
+  }
+}
+
+#cycles {
+  position: relative;
+  height: 800px;
+}
+#cycles .smartphone {
+  position: absolute;
+  left: 0px;
+  top: -100px;
+  height: 600px;
+}
+#cycles .container {
+  position: relative;
+}
+#cycles .title {
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
+#cycles .text-box {
+  position: absolute;
+  right: 0;
+  width: 400px;
+}
+#cycles .text-box .text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  line-height: 29.6px;
+  color: #939393;
+}
+
+#challenge {
+  background-color: rgba(163, 217, 205, 0.25);
+  background-blend-mode: multiply;
+  position: relative;
+}
+#challenge .container {
+  position: relative;
+  display: flex;
+  height: 800px;
+  align-items: center;
+  align-content: center;
+}
+#challenge .container img {
+  display: flex;
+}
+#challenge .title {
+  margin-bottom: 30px;
+}
+#challenge .text-box {
+  position: absolute;
+  right: 0;
+  width: 400px;
+}
+#challenge .text-box .text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  line-height: 29.6px;
+  color: #939393;
+}
+
+#multiple-elements {
+  background-color: transparent;
+  position: relative;
+}
+#multiple-elements .notebook {
+  position: absolute;
+  left: -500px;
+  height: 850px;
+  bottom: -240px;
+  z-index: 10;
+}
+#multiple-elements .container {
+  position: relative;
+  display: flex;
+  height: 800px;
+  align-items: center;
+  align-content: center;
+}
+#multiple-elements .container img {
+  display: flex;
+}
+#multiple-elements .title {
+  padding-top: 0px;
+  margin-bottom: 30px;
+}
+#multiple-elements .text-box {
+  position: absolute;
+  right: 0;
+  width: 400px;
+}
+#multiple-elements .text-box .text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  line-height: 29.6px;
+  color: #939393;
+}
+
+#solidity {
+  background-color: rgba(163, 217, 205, 0.25);
+  position: relative;
+}
+#solidity .notebook {
+  position: absolute;
+  left: -500px;
+  height: 850px;
+  bottom: -240px;
+  z-index: 10;
+}
+#solidity .container {
+  position: relative;
+  display: flex;
+  height: 800px;
+  align-items: center;
+  align-content: center;
+}
+#solidity .container img {
+  display: flex;
+}
+#solidity .title {
+  padding-top: 0px;
+  margin-bottom: 30px;
+}
+#solidity .text-box {
+  position: absolute;
+  right: 0;
+  width: 400px;
+}
+#solidity .text-box .text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  line-height: 29.6px;
+  color: #939393;
+}
+
+#computer {
+  position: relative;
+}
+#computer .background {
+  width: 100%;
+  z-index: 20;
+}
+@keyframes example {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#computer .animated-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 570px auto auto;
+  text-align: right;
+  width: 47%;
+  height: 24px;
+  font-weight: 500;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+#video {
+  opacity: 0;
+  height: 0;
+  background: linear-gradient(45deg, #4CBFBA, #5BB079);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#video.opened {
+  opacity: 1;
+  height: 100vh;
+  overflow: hidden;
+}
+#video .content {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+#video iframe {
+  width: 560px;
+  height: 315px;
+  margin-left: 70px;
+}
+#video .left-box {
+  float: left;
+  width: 50%;
+}
+#video .right-box {
+  float: left;
+  width: 50%;
+  height: 315px;
+}
+#video .right-box .title {
+  margin-top: 80px;
+  color: #fff;
+  text-align: center;
+}
+#video .right-box .edools {
+  width: fit-content;
+  display: block;
+  color: #fff;
+  font-size: 32px;
+  border: 1px solid #fff;
+  border-radius: 35px;
+  padding: 10px 25px;
+  font-weight: 600;
+  margin: 0 auto;
+}
+#video .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+  margin-top: 30px;
+}
+#video .social-media .icon {
+  margin: 0 10px;
+}
+#video .element {
+  position: absolute;
+  top: 25px;
+  height: 650px;
+}
+#video .element.element-right {
+  right: -315px;
+}
+#video .element.element-left {
+  left: -245px;
+}
+@media (max-width: 1200px) {
+  #video .element.element-left {
+    left: -30%;
+  }
+  #video .element.element-right {
+    right: -40%;
+  }
+}
+
+.loading {
+  opacity: 1;
+  transition: all 3s;
+}
+.loading .image {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  z-index: 20;
+  height: 200px;
+}
+.loading.loaded {
+  opacity: 0;
+  transition: all 3s;
+}
+
+.general-container {
+  max-height: 100vh;
+  overflow: hidden;
+}
+.general-container:after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #696a6f;
+  background-blend-mode: multiply;
+  opacity: 1;
+  transition: all 3s;
+}
+.general-container.loaded {
+  max-height: unset;
+  overflow: unset;
+}
+.general-container.loaded:after {
+  opacity: 0;
+  transition: all 3s;
+}
+
+/*# sourceMappingURL=main.css.map */
