@@ -144,9 +144,8 @@
   left: 0;
   margin: auto;
   right: 0;
-  animation-name: arrow;
-  animation-duration: 1.75s;
-  animation-iteration-count: infinite;
+  -webkit-animation: arrow 1.75s ease-in-out 5s infinite;
+  -moz-animation: arrow 1.75s ease-in-out 5s infinite;
 }
 
 #cycles {
