@@ -24,6 +24,14 @@
   position: fixed;
   transition: width 1s;
 }
+@media (max-width: 768px) {
+  .frame {
+    transform: scale(1.75);
+    -ms-transform: scale(1.75);
+    -webkit-transform: scale(1.75);
+    -moz-transform: scale(1.75);
+  }
+}
 .frame.final-position {
   transition: width 1s;
   top: 0px;
@@ -32,6 +40,10 @@
 @media (max-width: 992px) {
   .frame.final-position {
     width: 65%;
+    transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
   }
 }
 .frame.final-position.fixed {
@@ -144,6 +156,7 @@
   left: 0;
   margin: auto;
   right: 0;
+  animation: arrow 1.75s ease-in-out 5s infinite;
   -webkit-animation: arrow 1.75s ease-in-out 5s infinite;
   -moz-animation: arrow 1.75s ease-in-out 5s infinite;
 }
