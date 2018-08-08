@@ -130,9 +130,13 @@
     opacity: 1;
     bottom: 20%;
   }
-  100% {
+  90% {
     opacity: 0;
     bottom: 10%;
+  }
+  100% {
+    opacity: 0;
+    bottom: 20%;
   }
 }
 #new-identity .arrow {
@@ -141,7 +145,7 @@
   margin: auto;
   right: 0;
   animation-name: arrow;
-  animation-duration: 1.5s;
+  animation-duration: 1.75s;
   animation-iteration-count: infinite;
 }
 
