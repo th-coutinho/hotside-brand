@@ -450,7 +450,7 @@
     width: 100%;
   }
 }
-@keyframes example {
+@keyframes fading-text {
   0% {
     opacity: 1;
   }
@@ -472,9 +472,9 @@
   width: 47%;
   height: 24px;
   font-weight: 500;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  animation: fading-text 4s ease-in-out 5s infinite;
+  -webkit-animation: fading-text 4s ease-in-out 5s infinite;
+  -moz-animation: fading-text 4s ease-in-out 5s infinite;
   cursor: pointer;
 }
 @media (max-width: 992px) {
