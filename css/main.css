@@ -123,17 +123,20 @@
 }
 @keyframes arrow {
   0% {
+    opacity: 0;
+    bottom: 20%;
+  }
+  1% {
     opacity: 1;
-    bottom: 10%;
+    bottom: 20%;
   }
   100% {
     opacity: 0;
-    bottom: 0;
+    bottom: 10%;
   }
 }
 #new-identity .arrow {
   position: absolute;
-  bottom: 10%;
   left: 0;
   margin: auto;
   right: 0;
