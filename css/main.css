@@ -479,7 +479,7 @@
 }
 @media (max-width: 992px) {
   #computer .animated-text {
-    top: 57%;
+    top: 50%;
     text-align: center;
     width: 30%;
     height: 54px;
