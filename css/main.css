@@ -380,6 +380,11 @@
 #computer {
   position: relative;
 }
+@media (max-width: 992px) {
+  #computer {
+    overflow: hidden;
+  }
+}
 #computer .background {
   width: 100%;
   z-index: 20;
