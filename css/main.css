@@ -5,6 +5,12 @@
 .image-text {
   height: 120px;
 }
+@media (max-width: 992px) {
+  .image-text {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 .frame {
   top: 0px;
@@ -21,10 +27,27 @@
   top: 0px;
   width: 50%;
 }
+@media (max-width: 992px) {
+  .frame.final-position {
+    width: 65%;
+  }
+}
 .frame.final-position.fixed {
   transition: all 0s;
   position: absolute;
   top: 3700px;
+}
+@media (max-width: 992px) {
+  .frame.final-position.fixed {
+    bottom: unset;
+  }
+}
+@media (max-width: 992px) {
+  .frame {
+    width: 100%;
+    bottom: 0;
+    margin: auto;
+  }
 }
 
 #new-identity {
@@ -33,12 +56,22 @@
   height: 500px;
   overflow: hidden;
 }
+@media (max-width: 992px) {
+  #new-identity {
+    padding: 10%;
+  }
+}
 #new-identity .title {
   margin-top: 120px;
   margin-bottom: 40px;
 }
 #new-identity .text-box {
   width: 500px;
+}
+@media (max-width: 992px) {
+  #new-identity .text-box {
+    max-width: 100%;
+  }
 }
 #new-identity .text-box .text {
   padding-left: 28px;
@@ -51,10 +84,20 @@
   font-size: 20px;
   line-height: 32px;
 }
+@media (max-width: 992px) {
+  #new-identity .text-box .text {
+    padding-left: 0;
+  }
+}
 #new-identity .element {
   position: absolute;
   top: -165px;
   height: 650px;
+}
+@media (max-width: 992px) {
+  #new-identity .element {
+    display: none;
+  }
 }
 #new-identity .element.element-right {
   right: -315px;
@@ -75,6 +118,12 @@
   position: relative;
   height: 800px;
 }
+@media (max-width: 992px) {
+  #cycles {
+    height: auto;
+    padding: 10%;
+  }
+}
 #cycles .smartphone {
   position: absolute;
   left: 0px;
@@ -84,9 +133,19 @@
 #cycles .container {
   position: relative;
 }
+@media (max-width: 992px) {
+  #cycles .container {
+    position: unset;
+  }
+}
 #cycles .title {
   margin-top: 75px;
   margin-bottom: 30px;
+}
+@media (max-width: 992px) {
+  #cycles .title {
+    margin: 20px 0;
+  }
 }
 #cycles .text-box {
   position: absolute;
@@ -103,11 +162,23 @@
   color: #939393;
   text-align: justify;
 }
+@media (max-width: 992px) {
+  #cycles .text-box {
+    padding: unset;
+    width: 100%;
+    position: unset;
+  }
+}
 
 #challenge {
   background-color: rgba(163, 217, 205, 0.25);
   background-blend-mode: multiply;
   position: relative;
+}
+@media (max-width: 992px) {
+  #challenge {
+    padding: 10%;
+  }
 }
 #challenge .container {
   position: relative;
@@ -119,8 +190,25 @@
 #challenge .container img {
   display: flex;
 }
+@media (max-width: 992px) {
+  #challenge .container img {
+    display: block;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 992px) {
+  #challenge .container {
+    display: block;
+    height: auto;
+  }
+}
 #challenge .title {
   margin-bottom: 30px;
+}
+@media (max-width: 992px) {
+  #challenge .title {
+    margin: 20px 0;
+  }
 }
 #challenge .text-box {
   padding-left: 64px;
@@ -137,10 +225,22 @@
   text-align: justify;
   text-align: justify;
 }
+@media (max-width: 992px) {
+  #challenge .text-box {
+    position: unset;
+    padding: unset;
+    width: 100%;
+  }
+}
 
 #multiple-elements {
   background-color: transparent;
   position: relative;
+}
+@media (max-width: 992px) {
+  #multiple-elements {
+    padding: 10%;
+  }
 }
 #multiple-elements .notebook {
   position: absolute;
@@ -166,9 +266,25 @@
 #multiple-elements .container img {
   display: flex;
 }
+@media (max-width: 992px) {
+  #multiple-elements .container img {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  #multiple-elements .container {
+    display: block;
+    height: auto;
+  }
+}
 #multiple-elements .title {
   padding-top: 0px;
   margin-bottom: 30px;
+}
+@media (max-width: 992px) {
+  #multiple-elements .title {
+    margin: 20px 0;
+  }
 }
 #multiple-elements .text-box {
   position: absolute;
@@ -185,10 +301,22 @@
   text-align: justify;
   text-align: justify;
 }
+@media (max-width: 992px) {
+  #multiple-elements .text-box {
+    position: unset;
+    padding: unset;
+    width: 100%;
+  }
+}
 
 #solidity {
   background-color: rgba(163, 217, 205, 0.25);
   position: relative;
+}
+@media (max-width: 992px) {
+  #solidity {
+    padding: 10%;
+  }
 }
 #solidity .notebook {
   position: absolute;
@@ -207,9 +335,25 @@
 #solidity .container img {
   display: flex;
 }
+@media (max-width: 992px) {
+  #solidity .container img {
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  #solidity .container {
+    display: block;
+    height: auto;
+  }
+}
 #solidity .title {
   padding-top: 0px;
   margin-bottom: 30px;
+}
+@media (max-width: 992px) {
+  #solidity .title {
+    margin: 20px 0;
+  }
 }
 #solidity .text-box {
   padding-left: 64px;
@@ -225,6 +369,13 @@
   color: #939393;
   text-align: justify;
 }
+@media (max-width: 992px) {
+  #solidity .text-box {
+    position: unset;
+    padding: unset;
+    width: 100%;
+  }
+}
 
 #computer {
   position: relative;
@@ -232,6 +383,20 @@
 #computer .background {
   width: 100%;
   z-index: 20;
+}
+@media (max-width: 992px) {
+  #computer .background {
+    display: none;
+  }
+}
+#computer .background-mobile {
+  display: none;
+}
+@media (max-width: 992px) {
+  #computer .background-mobile {
+    display: block;
+    width: 104%;
+  }
 }
 @keyframes example {
   0% {
@@ -250,7 +415,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 570px auto auto;
+  margin: 35% auto auto;
   text-align: right;
   width: 47%;
   height: 24px;
@@ -396,6 +561,10 @@
 .general-container.loaded:after {
   opacity: 0;
   transition: all 3s;
+}
+.general-container.finished::after {
+  display: none;
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */
