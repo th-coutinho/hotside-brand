@@ -1,6 +1,9 @@
 :root * {
   font-family: "Montserrat", sans-serif;
 }
+:root a {
+  text-decoration: none;
+}
 
 .image-text {
   height: 120px;
@@ -107,6 +110,7 @@
 @media (max-width: 992px) {
   #new-identity .text-box .text {
     padding-left: 0;
+    text-align: left;
   }
 }
 #new-identity .element {
@@ -572,6 +576,7 @@
   text-align: center;
 }
 #video .right-box .edools {
+  max-width: 244px;
   width: fit-content;
   display: block;
   color: #fff;
