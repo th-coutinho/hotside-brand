@@ -462,6 +462,14 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes fading-text {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 #computer .animated-text {
   position: absolute;
   top: 0;
