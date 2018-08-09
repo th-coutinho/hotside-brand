@@ -118,7 +118,7 @@ var $frame = $('.frame');
             
             var loadedImages = 0;
 
-            for (let index = 0; index < 56; index++) {
+            for (var index = 0; index < 56; index++) {
 
                 var image_src;
 
