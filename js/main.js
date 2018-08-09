@@ -6,30 +6,32 @@ var $frame = $('.frame');
         
         var x = $('.loading-image');
 
-        var isMobile = isMobile;
+        var isDesktop = $(window).width() > 992;
+
+        
 
         
 
         var checkFrame = function() {
             var iCurScrollPos = $(this).scrollTop();
             
-            var initialPosition = isMobile ? 350 : 350;
-            var lastFramePosition = isMobile ? 3500 : 300;
-            var maxPosition = isMobile ? 3500 : $("#computer").offset().top - 400;
-            var fixedPosition =  isMobile ? 3690 : $("#computer").offset().top - ( $("#computer").height() / 2.5) + 198;
-
+            var initialPosition = isDesktop ? 350 : 350;
+            var lastFramePosition = isDesktop ? 3500 : 300;
+            var maxPosition = isDesktop ? 3500 : $("#computer").offset().top - 400;
+            var fixedPosition =  isDesktop ? 3650 : $("#computer").offset().top - ( $("#computer").height() / 2.5) + 198;
+            window.teste = fixedPosition;
             if (iScrollPos < initialPosition) {
                 updateFrame(1);
             }
             if (iScrollPos > initialPosition && iScrollPos < maxPosition) {
                 $('.frame').removeClass("final-position");
 
-                if (isMobile) {
+                if (isDesktop) {
                     var calculateFrame;
                     calculateFrame = parseInt((iScrollPos / 54) - 6);
                     var currentFrame = getCurrentFrame();
 
-                    if (calculateFrame != currentFrame ) {
+                    if (calculateFrame != currentFrame && calculateFrame <= 55 ) {
                         updateFrame(calculateFrame);
                     }
                 }
@@ -72,9 +74,13 @@ var $frame = $('.frame');
             if (iScrollPos < fixedPosition && $('.frame').hasClass("fixed")) {
                 
                 $('.frame').removeClass("fixed");
-                $('.frame').css({
-                    'top' : 0 + 'px'
-                });
+
+                if (isDesktop == false) {
+                    $('.frame').css({
+                        'top' : '0px'
+                    });
+                }
+                
             
             }
             
